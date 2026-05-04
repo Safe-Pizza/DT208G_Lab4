@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    line-height: 1.6em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white
+}
