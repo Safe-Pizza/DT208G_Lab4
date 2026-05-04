@@ -10,6 +10,13 @@
         </tr>
     </thead>
     <tbody>
-        
+        @for (course of courses(); track course.code) {
+            <tr>
+                <td>{{ course.code }}</td>
+                <td>{{ course.coursename }}</td>
+                <td>{{ course.progression }}</td>
+                <td><a href='{{ course.syllabus }}' target="_blank">Kursplan</a></td>
+            </tr>
+        }
     </tbody>
 </table>

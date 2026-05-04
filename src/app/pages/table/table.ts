@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TableService } from '../../services/table-service';
 
 @Component({
   selector: 'app-table',
@@ -6,4 +7,8 @@ import { Component } from '@angular/core';
   templateUrl: './table.html',
   styleUrl: './table.css',
 })
-export class Table {}
+export class Table {
+  tableService = inject(TableService);
+
+  courses = this.tableService.getCourses();
+}
