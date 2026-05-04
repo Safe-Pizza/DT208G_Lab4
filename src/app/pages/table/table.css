@@ -1,0 +1,33 @@
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 2em;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    font-size: 0.8em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    text-decoration: underline;
+    cursor: pointer;
+    text-align: left;
+}
+
+tbody tr:hover {
+    background-color: lightgray;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.course-code {
+    text-transform: uppercase;
+}
