@@ -1,6 +1,12 @@
 <h2>Ramschema - Webbutveckling</h2>
 <label for="search">Sök:</label>
-<input type="text" id="search" placeholder="Sök efter kurs...">
+<input 
+    type="text" 
+    id="search" 
+    placeholder="Sök efter kurs..." 
+    [value]="searchText()"
+    (input)="searchText.set($any($event.target).value)"
+    >
 <table>
     <thead>
         <tr>
@@ -11,13 +17,13 @@
         </tr>
     </thead>
     <tbody>
-        @for (course of courses(); track course.code) {
-            <tr>
-                <td class="course-code">{{ course.code }}</td>
-                <td class="course-name">{{ course.coursename }}</td>
-                <td class="course-progression">{{ course.progression }}</td>
-                <td class="course-syllabus"><a href='{{ course.syllabus }}' target="_blank">Kursplan</a></td>
-            </tr>
+        @for (course of filteredCourses(); track course.code) {
+        <tr>
+            <td class="course-code">{{ course.code }}</td>
+            <td class="course-name">{{ course.coursename }}</td>
+            <td class="course-progression">{{ course.progression }}</td>
+            <td class="course-syllabus"><a href='{{ course.syllabus }}' target="_blank">Kursplan</a></td>
+        </tr>
         }
     </tbody>
 </table>
