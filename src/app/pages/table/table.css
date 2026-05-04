@@ -1,3 +1,8 @@
+h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
 input {
     width: 100%;
     box-sizing: border-box;
@@ -17,10 +22,15 @@ thead {
     text-decoration: underline;
     cursor: pointer;
     text-align: left;
+    font-size: 1.2em;
+}
+
+th {
+    padding-right: 10px;
 }
 
 tbody tr:hover {
-    background-color: lightgray;
+    background-color: lavenderblush;
 }
 
 td {
@@ -30,4 +40,17 @@ td {
 
 .course-code {
     text-transform: uppercase;
+}
+
+td a {
+    text-decoration: none;
+    color: deeppink;
+}
+
+td a:hover {
+    color: rgb(143, 0, 76);
+}
+
+td a:visited {
+    color: darkslateblue;
 }
