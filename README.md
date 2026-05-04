@@ -45,3 +45,7 @@ Nu finns projektet tillgängligt för dig att köra lokalt på din dator via loc
 
 ## Kontakt
  Vill du komma i kontakt med mig?
+ 
+
+ **Hanna Lindkvist** \
+✉️ [hali2507@student.miun.se](mailto:hali2507@student.miun.se)
