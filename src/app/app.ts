@@ -6,7 +6,7 @@ import { Table } from "./pages/table/table";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Footer, Header, Table],
+  imports: [RouterOutlet, Footer, Header],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
